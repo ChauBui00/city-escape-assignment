@@ -32,9 +32,19 @@ ctx.fillRect(170, 40, 110, 60);
 // Small Top
 ctx.fillRect(190, 20, 70, 20);
 
+// Right Building Windows
 ctx.fillStyle = "white";
-ctx.fillRect(165, 120, 10, 500);
-ctx.fillRect(193, 120, 10, 500);
-ctx.fillRect(220, 120, 10, 500);
-ctx.fillRect(250, 120, 10, 500);
-ctx.fillRect(275, 120, 10, 500);
+ctx.fillRect(165, 120, 13, 500);
+ctx.fillRect(193, 120, 13, 500);
+ctx.fillRect(223, 120, 13, 500);
+ctx.fillRect(250, 120, 13, 500);
+ctx.fillRect(275, 120, 13, 500);
+
+// Top Left Building Grid of Windows
+
+for (let ySqr = 200; ySqr <= 345; ySqr += 15) {
+  // Draws a single row of windows
+  for (let xSqr = 45; xSqr < 120; xSqr += 15) {
+    ctx.fillRect(xSqr, ySqr, 7, 7);
+  }
+}
