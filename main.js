@@ -48,3 +48,7 @@ for (let ySqr = 200; ySqr <= 345; ySqr += 15) {
     ctx.fillRect(xSqr, ySqr, 7, 7);
   }
 }
+
+for (let yRect = 367; yRect < 630; yRect += 40) {
+  ctx.fillRect(17, yRect, 120, 17);
+}
